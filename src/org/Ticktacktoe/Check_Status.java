@@ -1,8 +1,8 @@
 package org.Ticktacktoe;
 /**
- * Ne kete klase eshte ndertuar metoda hasWinner e cila kontrollon nese permbushen kushtet per te pasur fitues.
+ * hasWinner method checks whether there is a winner each time the user makes a move
  * 
- * @author dardi20
+ * @author codei0
  *
  */
 public class Check_Status {

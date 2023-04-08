@@ -1,8 +1,9 @@
 package org.Ticktacktoe;
 
 /**
- * Ne kete klase eshte ndertuar objekti Board. 
- * @author dardi20
+ *
+ * The board object represents the field
+ * @author CodeIO
  *
  */
 public class Board {

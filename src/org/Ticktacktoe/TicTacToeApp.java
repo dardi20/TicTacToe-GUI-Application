@@ -1,8 +1,8 @@
 package org.Ticktacktoe;
 
 /**
- *	
- *@author dardi20 
+ *	Main class here we do implement the UI of the game, the main method also
+ *@author codeio 
  */
 
 import java.awt.BorderLayout;
@@ -20,13 +20,12 @@ import javax.swing.border.LineBorder;
 
 public class TicTacToeApp extends JFrame {
 
-	
 	private static final long serialVersionUID = 1L;
 	public static int i = 1;
 	String player;
 	Board board = new Board();
 	String[] b = board.getBoard();
-	
+
 	public TicTacToeApp() {
 
 		super("TickTackToe");
@@ -90,6 +89,7 @@ public class TicTacToeApp extends JFrame {
 				button0.setEnabled(false);
 				b[0] = player;
 				i++;
+				checkGame(gameResultTextField);
 			}
 
 		});
@@ -102,6 +102,7 @@ public class TicTacToeApp extends JFrame {
 				button8.setEnabled(false);
 				b[8] = player;
 				i++;
+				checkGame(gameResultTextField);
 			}
 
 		});
@@ -114,6 +115,7 @@ public class TicTacToeApp extends JFrame {
 				button7.setEnabled(false);
 				b[7] = player;
 				i++;
+				checkGame(gameResultTextField);
 			}
 
 		});
@@ -126,6 +128,7 @@ public class TicTacToeApp extends JFrame {
 				button6.setEnabled(false);
 				b[6] = player;
 				i++;
+				checkGame(gameResultTextField);
 			}
 
 		});
@@ -138,6 +141,8 @@ public class TicTacToeApp extends JFrame {
 				button1.setEnabled(false);
 				b[1] = player;
 				i++;
+				checkGame(gameResultTextField);
+
 			}
 
 		});
@@ -150,6 +155,8 @@ public class TicTacToeApp extends JFrame {
 				button2.setEnabled(false);
 				b[2] = player;
 				i++;
+				checkGame(gameResultTextField);
+
 			}
 
 		});
@@ -162,6 +169,8 @@ public class TicTacToeApp extends JFrame {
 				button3.setEnabled(false);
 				b[3] = player;
 				i++;
+				checkGame(gameResultTextField);
+
 			}
 
 		});
@@ -174,6 +183,8 @@ public class TicTacToeApp extends JFrame {
 				button4.setEnabled(false);
 				b[4] = player;
 				i++;
+				checkGame(gameResultTextField);
+
 			}
 
 		});
@@ -186,6 +197,8 @@ public class TicTacToeApp extends JFrame {
 				button5.setEnabled(false);
 				b[5] = player;
 				i++;
+				checkGame(gameResultTextField);
+
 			}
 
 		});
@@ -226,14 +239,14 @@ public class TicTacToeApp extends JFrame {
 			}
 		});
 
-		do {
+		checkGame(gameResultTextField);
 
-			EvaluateGame.evaluateGame(i, b);
-			player = EvaluateGame.getPlayer();
-			gameResultTextField.setText(EvaluateGame.status);
+	}
 
-		} while (true);
-
+	public void checkGame(JTextField gameResultTextField) {
+		EvaluateGame.evaluateGame(i, b);
+		player = EvaluateGame.getPlayer();
+		gameResultTextField.setText(EvaluateGame.status);
 	}
 
 	public static void main(String[] args) {

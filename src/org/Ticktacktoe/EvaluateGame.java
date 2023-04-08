@@ -1,9 +1,7 @@
 package org.Ticktacktoe;
 
 /**
- * Ne kete klase metoda evaluateGame kontrollon nese ekziston nje fitues,
- * kontrollon statusin e lojes gjithastu realizon shkembimin e lojtarit X/O
- * 
+ *  
  * @author dardi20
  *
  */
